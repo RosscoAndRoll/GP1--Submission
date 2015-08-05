@@ -1,0 +1,16 @@
+Ross Langmuir GP1 Assignment
+Code Explanation
+
+There are 11 classes in my game.
+
+Main is the most important class in the program. It controls the flow of the game. First it sets up the height and width of the window and then creates it. It loads in the music for the game and plays it. It loads in the textures to use for the falling items in the game. A for loop runs which creates 20 of them and random positions with random sizes. 
+
+The background is then loaded in then the player sprite. Then the game loop begins. Outside out of this loop is the code for shutting down.
+
+The rocket class is the main one controlling how the player's boat functions and behaves. First the boat is rendered and set to a size and bound to a rectangle. Then in the update section left and right make the ship go back and forth, down respawns the treasure and space activates the grab.
+
+There is a collision checker that detects whether a hit has been made and should add 100 points to the score. 
+
+The bullet class creates a pirate at the player location with no movement which is destroyed when it comes into contact with the treasure.
+
+The Sprite file contains all the classes that render and move sprites in the game. Including rotation, translation and scaling. As well as determining the centre point.
