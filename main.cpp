@@ -11,6 +11,7 @@
 #include "cInputMgr.h"
 #include "cSprite.h"
 #include "asteroidsGame.h"
+#include "MMsystem.h"
 
 int WINAPI WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
@@ -23,7 +24,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
     const int windowHeight = 768;
     const int windowBPP = 16;
 
-
+	//Activate sound
+	PlaySound(TEXT("GameMusic.wav"), NULL, SND_LOOP);
 
     //This is our window
 	static cWNDManager* pgmWNDMgr = cWNDManager::getInstance();
